@@ -1,0 +1,14 @@
+# Copyright 2022 Manna Harbour
+# https://github.com/manna-harbour/miryoku
+
+name: 'Build Beekeeb/piantor_pro'
+on:
+  workflow_dispatch:
+jobs:
+  build:
+    uses: ./.github/workflows/main.yml
+    with:
+      keyboard: '["beekeeb/piantor_pro"]'
+      merge: '[
+        "qmk/qmk_firmware/master"
+      ]'
