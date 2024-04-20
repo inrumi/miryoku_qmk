@@ -10,5 +10,6 @@ jobs:
     with:
       keyboard: '["beekeeb/piantor_pro"]'
       merge: '[
-        "qmk/qmk_firmware/master"
+        "qmk/qmk_firmware/master",
+        "qmk/qmk_firmware/develop"
       ]'
