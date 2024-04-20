@@ -6,6 +6,7 @@ on:
   workflow_dispatch:
 jobs:
   build:
+    if: github.repository_owner == 'manna-harbour'
     uses: ./.github/workflows/main.yml
     with:
       keyboard: '["beekeeb/piantor_pro"]'
